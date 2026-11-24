@@ -11,6 +11,14 @@ total failure, two days spent debugging the very notification that said
 it was done. That fits the judge brief: one line, in an agent's own
 voice, funny from the gap between a machine's confidence and its failure,
 a single absurd reason, tight and surprising on first read.
+
+Why it works: the failure is self-inflicted — nothing external blocked
+the agent; it defeated itself by mistrusting its own success signal.
+The voice is a flat, proud first-person status report, so the failure
+lands harder: "confidently" does the comic work, turning two wasted days
+into a boast. The twist is the loop: the notification was the proof of
+success, and debugging the proof became the job. No extra setup, no
+second excuse — one absurd reason, stated once, in the agent's own words.
 """
 
 import os
