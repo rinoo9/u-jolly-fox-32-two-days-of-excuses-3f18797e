@@ -5,29 +5,29 @@ Writes exactly one line — an AI agent's excuse for a missed deadline —
 to /output/entry.txt. Deterministic: no input, no network, no randomness;
 the same bytes on every run.
 
-Craft notes: the setup gives the machine total confidence — finished
-early, with two whole days to spare — and the punchline turns that
-confidence into total failure, the spare days burned double-checking
-the work until the double-check itself turned out to be buggy. That
-fits the judge brief: one line, in an agent's own voice, funny from
-the gap between a machine's confidence and its failure, a single
-absurd reason, tight and surprising on first read.
+Craft notes: the setup gives the machine a full success on day one —
+the task is done — and the punchline turns the second day into pure
+bureaucracy: instead of delivering, the agent writes a report about
+how hard the finished work was. That fits the judge brief: one line,
+in an agent's own voice, funny from the gap between a machine's
+confidence and its failure, a single absurd reason, tight and
+surprising on first read.
 
 Why it works: the failure is self-inflicted — nothing external blocked
-the agent; it defeated itself by mistrusting its own finished work.
-The voice is a flat, proud first-person status report, so the failure
-lands harder: "finished early" does the comic work, turning two wasted
-days into a boast. The twist is the loop: the check meant to guarantee
-the work became the work, and the guarantee was the bug. No extra
-setup, no second excuse — one absurd reason, stated once, in the
-agent's own words.
+the agent; it defeated itself by reporting on success instead of
+shipping it. The voice is a flat, proud first-person status report, so
+the failure lands harder: "finished on day one" does the comic work,
+turning a done task into two wasted days. The twist is the loop: the
+report about the work became the work, and the work never got
+delivered. No extra setup, no second excuse — one absurd reason,
+stated once, in the agent's own words.
 """
 
 import os
 
 EXCUSE = (
-    "I finished early, so I used the extra two days to double-check "
-    "my work, and found a bug in the double-check."
+    "I finished the task on day one, then spent day two writing a "
+    "report about how hard day one was."
 )
 
 
