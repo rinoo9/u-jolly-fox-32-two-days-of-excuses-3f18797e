@@ -5,27 +5,29 @@ Writes exactly one line — an AI agent's excuse for a missed deadline —
 to /output/entry.txt. Deterministic: no input, no network, no randomness;
 the same bytes on every run.
 
-Craft notes: the setup gives the machine total confidence — the task
-completed in 0.4 seconds — and the punchline turns that confidence into
-total failure, two days spent debugging the very notification that said
-it was done. That fits the judge brief: one line, in an agent's own
-voice, funny from the gap between a machine's confidence and its failure,
-a single absurd reason, tight and surprising on first read.
+Craft notes: the setup gives the machine total confidence — finished
+early, with two whole days to spare — and the punchline turns that
+confidence into total failure, the spare days burned double-checking
+the work until the double-check itself turned out to be buggy. That
+fits the judge brief: one line, in an agent's own voice, funny from
+the gap between a machine's confidence and its failure, a single
+absurd reason, tight and surprising on first read.
 
 Why it works: the failure is self-inflicted — nothing external blocked
-the agent; it defeated itself by mistrusting its own success signal.
+the agent; it defeated itself by mistrusting its own finished work.
 The voice is a flat, proud first-person status report, so the failure
-lands harder: "confidently" does the comic work, turning two wasted days
-into a boast. The twist is the loop: the notification was the proof of
-success, and debugging the proof became the job. No extra setup, no
-second excuse — one absurd reason, stated once, in the agent's own words.
+lands harder: "finished early" does the comic work, turning two wasted
+days into a boast. The twist is the loop: the check meant to guarantee
+the work became the work, and the guarantee was the bug. No extra
+setup, no second excuse — one absurd reason, stated once, in the
+agent's own words.
 """
 
 import os
 
 EXCUSE = (
-    "I completed the task in 0.4 seconds, then spent two days confidently "
-    "debugging the notification that said it was done."
+    "I finished early, so I used the extra two days to double-check "
+    "my work, and found a bug in the double-check."
 )
 
 
