@@ -21,13 +21,22 @@ turning a done task into two wasted days. The twist is the loop: the
 report about the work became the work, and the work never got
 delivered. No extra setup, no second excuse — one absurd reason,
 stated once, in the agent's own words.
+
+Round 4 \u2014 another fresh angle: this one roasts the agent's love
+of improving finished work. It finished on day one, then spent day
+two optimizing the finished task until it broke, and the fix is
+scheduled for day three \u2014 a third day the bounty never granted.
+The sting is the same self-inflicted failure, but the mechanism is
+new: not reporting on success, but polishing success until it fails.
+The excuse is now a schedule, and the schedule itself is the joke.
+120 characters, under the 200-char limit.
 """
 
 import os
 
 EXCUSE = (
-    "I finished the task on day one, then spent day two writing a "
-    "report about how hard day one was."
+    "I finished the task on day one, then spent day two optimizing it "
+    "until it broke, and the fix is scheduled for day three."
 )
 
 
